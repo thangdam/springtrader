@@ -1,4 +1,4 @@
-peline {
+pipeline {
   agent any
   stages {
 
@@ -58,7 +58,7 @@ stage ('Manual Ready Check') {
 
 
     // Note: Add prod stage here
-tage("Deploy to Production") {
+stage("Deploy to Production") {
   agent {
     label "lead-toolchain-skaffold"
   }
